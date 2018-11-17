@@ -1,0 +1,14 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <array name="trusted_hosts">
+        <item>B18D9D195669BA0F7829517566C25F422A277104</item> <!-- VeriSign Class 3 International Server CA - G3 -->
+        <item>1933061EA82851CEF85CB8C477A80FD7E0306353</item> <!-- VeriSign Class 3 International Server CA - G3 -->
+        <item>C75C9E3BE1900E752F46DEBA590E6DCA4897971C</item> <!-- OU=FNMT Clase 2 CA,O=FNMT,C=ES -->
+        <item>b38fecec0b148aa686c3d00f01ecc8848e8085eb</item> <!-- Autoridad de AV DNIE FNMT DNIe sha1-->
+        <item>AFBD7832527A482B7DCBF0AB6790B51EEDC6508A</item> <!-- Autoridad de AV DNIE FNMT sha256-->
+        <item>2229f056d34d1cb63e986f26b2d08ab94ff08e4d</item> <!-- Autoridad de Certificación Raíz del DNIe sha256-->
+        <item>a34d2cc5324580a1766184c7a2173fd0f890ecd0</item> <!-- Autoridad de Certificación Subordinada1 del DNIe sha1-->
+        <item>41cf9ec0733d58e43997a6c65df797c3ee99407b</item> <!-- Autoridad de Certificación Subordinada1 del DNIe sha256-->
+        <item>383790170f955959857ba70640f9e0068f4b1408</item> <!-- Autoridad de Certificación Subordinada2 del DNIe sha1-->
+        <item>502bd0078e6da235c45f521c63ef549df0198fdd</item> <!-- Autoridad de Certificación Subordinada2 del DNIe sha256-->
+    </array>
+</resources>

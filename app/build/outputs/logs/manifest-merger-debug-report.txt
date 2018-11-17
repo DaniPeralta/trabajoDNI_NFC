@@ -1,0 +1,180 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:3:1-76:12
+	package
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:7:5-30
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:4:5-63
+	android:versionCode
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:6:5-28
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:5-47
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:5-47
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:5-47
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:7:5-9:41
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:5-47
+INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:5-47
+	android:targetSdkVersion
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:15-44
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:9:5-47
+		INJECTED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.nfc
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:11:5-81
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:11:5-13:35
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:11:5-13:35
+	android:required
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:11:55-78
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:11:19-54
+uses-permission#android.permission.INTERNET
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:12:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.NFC
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:14:5-61
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:15:5-62
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:15:5-62
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:14:22-59
+application
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:16:5-74:19
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:17:5-21:19
+MERGED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:17:5-21:19
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:21:9-41
+	android:hardwareAccelerated
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:20:9-43
+	android:icon
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:19:9-45
+	android:allowBackup
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from [:dniedroid] /Users/danipera/.gradle/caches/transforms-1/files-1.1/dniedroid.aar/55a9c5eb874faf0b0014a7501fbd362d/AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:18:9-56
+activity#com.dnielectura.DNIeLectura
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:22:9-30:20
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:25:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:24:13-50
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:23:13-55
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:26:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.dnielectura.NFCOperationsEnc
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:32:9-44:20
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:34:13-51
+	android:enabled
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:36:13-38
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:33:13-52
+	android:launchMode
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:35:13-44
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:32:19-66
+intent-filter#action:name:android.nfc.action.TAG_DISCOVERED+category:name:android.intent.category.DEFAULT
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:37:13-40:29
+action#android.nfc.action.TAG_DISCOVERED
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:38:17-75
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:38:25-73
+category#android.intent.category.DEFAULT
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:39:17-75
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:39:27-73
+meta-data#android.nfc.action.TAG_DISCOVERED
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:41:13-43:53
+	android:resource
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:43:17-51
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:42:17-65
+activity#com.dnielectura.NFCOperationsEncKitKat
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:46:9-48:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:48:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:47:13-52
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:46:19-72
+activity#com.dnielectura.DNIeCanSelection
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:50:9-52:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:52:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:51:13-52
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:50:19-66
+activity#com.dnielectura.DNIeReader
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:54:9-56:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:56:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:55:13-52
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:54:19-60
+activity#com.dnielectura.DataResult
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:58:9-60:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:60:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:59:13-52
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:58:19-60
+activity#com.dnielectura.DataConfiguration
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:62:9-64:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:64:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:63:13-55
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:62:19-67
+activity#com.dnielectura.DNIeHelp
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:66:9-68:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:68:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:67:13-53
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:66:19-58
+activity#com.dnielectura.DataErrorActivity
+ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:70:9-72:51
+	android:screenOrientation
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:72:13-49
+	android:label
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:71:13-54
+	android:name
+		ADDED from /Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/AndroidManifest.xml:70:19-52

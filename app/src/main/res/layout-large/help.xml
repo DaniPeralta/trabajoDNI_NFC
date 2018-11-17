@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:contentDescription="@string/str_logo_desc"
+        android:src="@drawable/banner_dgp_red"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_ayuda">
+
+        <TableLayout
+            android:id="@+id/help_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="1"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/button1_image"
+                    android:layout_width="70dip"
+                    android:layout_height="100dip"
+                    android:src="@drawable/btn_w__leerdatos_pulsado"/>
+
+                <TextView
+                    android:id="@+id/button1_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="20dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="@string/help_detail_load"
+                    android:textAppearance="@style/TextAppearance.Baskerville.Large"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/button2_image"
+                    android:layout_width="120dip"
+                    android:layout_height="120dip"
+                    android:src="@drawable/btn_w_config_pulsado"/>
+
+                <TextView
+                    android:id="@+id/button2_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:singleLine="false"
+                    android:text="@string/help_detail_config"
+                    android:textAppearance="@style/TextAppearance.Baskerville.Large"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/button3_image"
+                    android:layout_width="125dip"
+                    android:layout_height="125dip"
+                    android:src="@drawable/btn_w_ayuda2"/>
+
+                <TextView
+                    android:id="@+id/button3_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="@string/help_detail_help"
+                    android:textAppearance="@style/TextAppearance.Baskerville.Large"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:id="@+id/butDataVolver"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="180sp"
+                android:layout_height="180sp"
+                android:background="@drawable/xmlopcion_w_volver"
+                android:layout_marginBottom="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/butDataLeer"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="180sp"
+                android:layout_height="150sp"
+                android:background="@drawable/xmlopcion_w_leerdatos"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
