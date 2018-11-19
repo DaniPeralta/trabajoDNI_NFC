@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Nov 17 14:28:33 CET 2018
+#Mon Nov 19 15:09:27 CET 2018
 17.baseType=DIRECTORY
 4.path=fonts/Baskvill.TTF
 8.set=DEX
@@ -23,7 +23,7 @@ count=19
 7.base=/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 14.path=classes.dex
 15.set=ASSET
-6.path=fonts/HelveticaNeue.ttf
+6.path=246x0w.jpg
 1.base=/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/transforms/dexMerger/debug/19
 1.set=DEX
 0.path=classes.dex
@@ -35,7 +35,7 @@ count=19
 14.baseType=DIRECTORY
 17.base=/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 10.base=/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/transforms/dexMerger/debug/13
-7.path=246x0w.jpg
+7.path=fonts/HelveticaNeue.ttf
 16.baseType=DIRECTORY
 14.set=DEX
 2.base=/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/transforms/dexMerger/debug/16

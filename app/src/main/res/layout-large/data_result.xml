@@ -98,6 +98,19 @@
                 android:layout_height="match_parent"
                 android:padding="1dp"
                 android:textAppearance="@style/TextAppearance.Baskerville.Large" />
+
+            <TextView
+                android:id="@+id/textomostrar"
+                android:layout_width="90dip"
+                android:layout_height="30dip"
+                android:layout_below="@+id/CITIZEN_data_tab_00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="25dp"
+                android:padding="1dp"
+                android:text="Resultado: "
+                android:textAppearance="@style/TextAppearance.Baskerville.Small"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow

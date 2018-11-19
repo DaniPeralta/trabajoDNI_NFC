@@ -19,6 +19,7 @@ import com.dnielectura.jj2000.J2kStreamDecoder;
 import java.io.ByteArrayInputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -76,55 +77,27 @@ public class DataResult extends Activity {
             ////////////////////////////////////////////////////////////////////////
             // Información del DG1, si la tenemos
             if(m_dg1!=null) {
-                // Nombre
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_01);
-                tvloc.setText(m_dg1.getName());
+
                 nombre = m_dg1.getName();
-                // Apellidos
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_02);
-                tvloc.setText(m_dg1.getSurname());
+
                 apellidos = m_dg1.getSurname();
-                // Doc Number
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03);
-                tvloc.setText(m_dg1.getDocNumber());
-                // Doc caducity
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03_caducity);
-                tvloc.setText(m_dg1.getDateOfExpiry());
-                // Fecha de nacimiento
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_07);
-                tvloc.setText(m_dg1.getDateOfBirth());
-                //Pasar a date
+
                 fecNac = m_dg1.getDateOfBirth();
-                SimpleDateFormat formatoFecha = new SimpleDateFormat("dd-mm-yyyy");
+                SimpleDateFormat formatoFecha = new SimpleDateFormat("dd.MM.yyyy");
                 try{
                     fecNacDate = formatoFecha.parse(fecNac);
                 } catch (ParseException ex){
                     ex.printStackTrace();
                 }
-                // País de nacimiento
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_09);
-                tvloc.setText(m_dg1.getNationality().toUpperCase());
+
             }
 
             ////////////////////////////////////////////////////////////////////////
             // Información del DG11, si la tenemos
             if(m_dg11!=null) {
-                // Lugar de nacimiento
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_08);
-                tvloc.setText(m_dg11.getBirthPlace().replace("<", " (") + ")");
+
                 lugNac = m_dg11.getBirthPlace().replace("<", " (") + ")";
-                // DNIe Number
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03);
-                tvloc.setText(m_dg11.getPersonalNumber());
-                // Dirección actual
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_04);
-                tvloc.setText(m_dg11.getAddress(DG11.ADDR_DIRECCION));
-                // Localidad
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_05);
-                tvloc.setText(m_dg11.getAddress(DG11.ADDR_LOCALIDAD));
-                // Provincia
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_06);
-                tvloc.setText(m_dg11.getAddress(DG11.ADDR_PROVINCIA));
+
             }
 
             ////////////////////////////////////////////////////////////////////////
@@ -151,62 +124,33 @@ public class DataResult extends Activity {
 
             ////////////////////////////////////////////////////////////////////////
             // Información del DG7, si la tenemos
-            ImageView ivFirma = (ImageView) findViewById(R.id.CITIZEN_data_tab_00_FIRMA);
-            if(m_dataDG7!=null){
-                try {
-                    // Parseo de la firma en formato JPEG-2000
-                    byte [] imagen = m_dg7.getImageBytes();
-                    J2kStreamDecoder j2k = new J2kStreamDecoder();
-                    ByteArrayInputStream bis = new ByteArrayInputStream(imagen);
-                    loadedSignature = j2k.decode(bis);
-                }catch(Exception e)
-                {
-                    e.printStackTrace();
-                }
 
-                // Mostramos la firma si hemos podido decodificarla
-                if(loadedSignature!=null) {
-                    // Mostramos la firma
-                    ivFirma.setVisibility(ImageView.VISIBLE);
-                    ivFirma.setImageBitmap(loadedSignature);
-                }
+
+            Date hoy = new Date();
+
+            Calendar nac = Calendar.getInstance();
+            nac.setTime(fecNacDate);
+
+
+            Calendar today = Calendar.getInstance();
+            today.setTime(hoy);
+
+            //nac.set(Calendar.MONTH, today.get(Calendar.YEAR));
+
+            nac.set(Calendar.YEAR, today.get(Calendar.YEAR));
+
+           if(nac.before(today)) {
+                nac.set(Calendar.YEAR, nac.get(Calendar.YEAR) + 1);
             }
 
-            // Ajustamos el tipo de letra del título y de toda la tabla
-            Typeface typeFace = Typeface.createFromAsset(myContext.getAssets(), "fonts/HelveticaNeue.ttf");
-            TableLayout miTabla = (TableLayout) findViewById(R.id.data_table);
-            for(int i = 0, j = miTabla.getChildCount(); i < j; i++) {
-                View view = miTabla.getChildAt(i);
-                if (view instanceof TableRow) {
-                    TableRow row = (TableRow) view;
-                    for(int idx = 0; idx < row.getChildCount(); idx++)
-                    {
-                        View viewText = row.getChildAt(idx);
-                        if (viewText instanceof TextView)
-                            ((TextView)viewText).setTypeface(typeFace);
-                    }
-                }
-            }
 
-            miTabla = (TableLayout) findViewById(R.id.data_table2);
-            for(int i = 0, j = miTabla.getChildCount(); i < j; i++) {
-                View view = miTabla.getChildAt(i);
-                if (view instanceof TableRow) {
-                    TableRow row = (TableRow) view;
-                    for(int idx = 0; idx < row.getChildCount(); idx++)
-                    {
-                        View viewText = row.getChildAt(idx);
-                        if (viewText instanceof TextView)
-                            ((TextView)viewText).setTypeface(typeFace);
-                    }
-                }
-            }
-            Date hoy=null;
-            long diffTime = (hoy.getTime() - fecNacDate.getTime());
+            long diffTime = (nac.getTimeInMillis() - today.getTimeInMillis());
 
-            textoAMostrar = "Hola amigo" + nombre + apellidos + " veo que estás usando la app de la asignatura de Criptografía.\n" +
-                    "¿El día "+fecNac+" es tu cumpleaños? Solo te quedan " + (int)TimeUnit.DAYS.convert(diffTime, TimeUnit.MILLISECONDS) + ". Ve a celebrarlo a "+lugNac+"\n" +
+            textoAMostrar = "Hola amigo " + nombre + apellidos + " veo que estás usando la app de la asignatura de Criptografía.\n" +
+                    "¿El día "+fecNac+" es tu cumpleaños? Solo te quedan " + (int)TimeUnit.MILLISECONDS.toDays(Math.abs(diffTime)) + "días" + ". Ve a celebrarlo a "+lugNac+"\n" +
                     "No olvides pedir un aprobado en Criptografía al soplar las velas";
+
+        //textoAMostrar = "HOLA: " + nac.getTime() + " Mes: " + nac.get(Calendar.MONTH) + " Dia: "+nac.get(Calendar.DAY_OF_MONTH) + " Año: " +nac.get(Calendar.YEAR);
             textoMostrar = (TextView) findViewById(R.id.textomostrar);
             textoMostrar.setText(textoAMostrar);
         }
@@ -219,17 +163,6 @@ public class DataResult extends Activity {
                 // Volvemos a la pantalla principal
                 Intent intent = new Intent(DataResult.this, DNIeLectura.class);
                 startActivity(intent);
-            }
-        });
-
-        ///////////////////////////////////////////////////////////////////////////////////
-        // Botón de configuración
-        Button btnConfig = (Button)findViewById(R.id.butConfigurar);
-        btnConfig.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //Creamos el Intent correspondiente
-                Intent intent = new Intent(DataResult.this, DataConfiguration.class);
-                startActivityForResult(intent, 1);
             }
         });
     }

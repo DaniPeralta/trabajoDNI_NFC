@@ -56,12 +56,12 @@
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/btn_w_anadirnuevodnie_pulsado.png"
     },
     {
-        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_w_volver.png.flat",
-        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/btn_w_volver.png"
-    },
-    {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_services_button.png.flat",
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/services_button.png"
+    },
+    {
+        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_w_volver.png.flat",
+        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/btn_w_volver.png"
     },
     {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/layout_can_list.xml.flat",
@@ -96,12 +96,12 @@
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/layout-large/can_entry.xml"
     },
     {
-        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_logo_fnmt.png.flat",
-        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/logo_fnmt.png"
-    },
-    {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_logodgp_cnp.png.flat",
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/logodgp_cnp.png"
+    },
+    {
+        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_logo_fnmt.png.flat",
+        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/logo_fnmt.png"
     },
     {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/layout-large_list_mrtd_row.xml.flat",
@@ -180,20 +180,20 @@
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/btn_w_config.png"
     },
     {
-        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_w_ayuda2.png.flat",
-        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/btn_w_ayuda2.png"
-    },
-    {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_logo_dnie.png.flat",
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/logo_dnie.png"
     },
     {
-        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_alert_dialog_icon.png.flat",
-        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/alert_dialog_icon.png"
+        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_w_ayuda2.png.flat",
+        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/btn_w_ayuda2.png"
     },
     {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/layout-large_main.xml.flat",
         "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/layout-large/main.xml"
+    },
+    {
+        "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable-hdpi_alert_dialog_icon.png.flat",
+        "source": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/src/main/res/drawable-hdpi/alert_dialog_icon.png"
     },
     {
         "merged": "/Users/danipera/AndroidStudioProjects/Android_DGPApp_LECTURA/app/build/intermediates/res/merged/debug/drawable_xmlboton_ayuda.xml.flat",
