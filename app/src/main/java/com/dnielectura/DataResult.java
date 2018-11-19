@@ -20,6 +20,7 @@ import java.io.ByteArrayInputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import de.tsenger.androsmex.mrtd.DG11;
 import de.tsenger.androsmex.mrtd.DG1_Dnie;
@@ -201,8 +202,10 @@ public class DataResult extends Activity {
                 }
             }
             Date hoy=null;
+            long diffTime = (hoy.getTime() - fecNacDate.getTime());
+
             textoAMostrar = "Hola amigo" + nombre + apellidos + " veo que estás usando la app de la asignatura de Criptografía.\n" +
-                    "¿El día "+fecNac+" es tu cumpleaños? Solo te quedan " + (fecNacDate.getTime() - hoy.getTime()) + " venga a celebrarlo a "+lugNac+"\n" +
+                    "¿El día "+fecNac+" es tu cumpleaños? Solo te quedan " + (int)TimeUnit.DAYS.convert(diffTime, TimeUnit.MILLISECONDS) + ". Ve a celebrarlo a "+lugNac+"\n" +
                     "No olvides pedir un aprobado en Criptografía al soplar las velas";
             textoMostrar = (TextView) findViewById(R.id.textomostrar);
             textoMostrar.setText(textoAMostrar);
