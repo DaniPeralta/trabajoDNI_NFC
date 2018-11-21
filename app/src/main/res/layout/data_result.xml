@@ -50,17 +50,14 @@
 			android:textStyle="bold" />
 
 		<TextView
-			android:id="@+id/textomostrar"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_below="@+id/CITIZEN_data_tab_00"
-			android:layout_marginLeft="10dp"
-			android:layout_marginTop="50dp"
-			android:layout_marginRight="25dp"
-			android:padding="1dp"
-			android:text="Resultado: "
-			android:textAppearance="@style/TextAppearance.Baskerville.Small"
-			android:textStyle="bold" />
+				android:id="@+id/textomostrar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="1dp"
+				android:text="Hola amigo veo que estás usando la app de la asignatura de Criptografía. "
+				android:textAppearance="@style/TextAppearance.Baskerville.Small"
+				android:textStyle="bold" android:layout_below="@+id/CITIZEN_data_tab_00_FIRMA" android:layout_alignStart="@+id/resultado"
+				android:layout_alignEnd="@+id/CITIZEN_data_tab_00_FIRMA" android:textColor="@color/NormalTextColor"/>
 
 		<!--<TableLayout
 			android:id="@+id/data_table"

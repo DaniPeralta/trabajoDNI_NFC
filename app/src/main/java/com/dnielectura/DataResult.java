@@ -50,33 +50,41 @@ public class DataResult extends Activity {
         Context myContext = DataResult.this;
 
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
+        if (extras != null) {
 
             // Recuperamos los datos obtenidos en la lectura anterior
-            byte [] m_dataDG1	= extras.getByteArray("DGP_DG1");
-            byte []  m_dataDG2	= extras.getByteArray("DGP_DG2");
-            byte [] m_dataDG7	= extras.getByteArray("DGP_DG7");
-            byte [] m_dataDG11 	= extras.getByteArray("DGP_DG11");
+            byte[] m_dataDG1  = extras.getByteArray("DGP_DG1");
+            byte[] m_dataDG2  = extras.getByteArray("DGP_DG2");
+            byte[] m_dataDG7  = extras.getByteArray("DGP_DG7");
+            byte[] m_dataDG11 = extras.getByteArray("DGP_DG11");
 
             // Construimos los objetos Data Group que hayamos leído
-            if(m_dataDG1!=null) m_dg1   = new DG1_Dnie(m_dataDG1);
-            if(m_dataDG2!=null) m_dg2   = new DG2(m_dataDG2);
-            if(m_dataDG7!=null) m_dg7   = new DG7(m_dataDG7);
-            if(m_dataDG11!=null)m_dg11  = new DG11(m_dataDG11);
+            if (m_dataDG1 != null) {
+                m_dg1 = new DG1_Dnie(m_dataDG1);
+            }
+            if (m_dataDG2 != null) {
+                m_dg2 = new DG2(m_dataDG2);
+            }
+            if (m_dataDG7 != null) {
+                m_dg7 = new DG7(m_dataDG7);
+            }
+            if (m_dataDG11 != null) {
+                m_dg11 = new DG11(m_dataDG11);
+            }
 
             TextView tvloc;
 
             /* CÓDIGO MÍO */
-            String textoAMostrar = "";
-            String nombre = "";
-            String apellidos = "";
-            String fecNac = "";
-            String lugNac = "";
-            Date fecNacDate = null;
+            String   textoAMostrar = "";
+            String   nombre        = "";
+            String   apellidos     = "";
+            String   fecNac        = "";
+            String   lugNac        = "";
+            Date     fecNacDate    = null;
             TextView textoMostrar;
             ////////////////////////////////////////////////////////////////////////
             // Información del DG1, si la tenemos
-            if(m_dg1!=null) {
+            if (m_dg1 != null) {
 
                 nombre = m_dg1.getName();
 
@@ -84,9 +92,9 @@ public class DataResult extends Activity {
 
                 fecNac = m_dg1.getDateOfBirth();
                 SimpleDateFormat formatoFecha = new SimpleDateFormat("dd.MM.yyyy");
-                try{
+                try {
                     fecNacDate = formatoFecha.parse(fecNac);
-                } catch (ParseException ex){
+                } catch (ParseException ex) {
                     ex.printStackTrace();
                 }
 
@@ -94,7 +102,7 @@ public class DataResult extends Activity {
 
             ////////////////////////////////////////////////////////////////////////
             // Información del DG11, si la tenemos
-            if(m_dg11!=null) {
+            if (m_dg11 != null) {
 
                 lugNac = m_dg11.getBirthPlace().replace("<", " (") + ")";
 
@@ -103,60 +111,54 @@ public class DataResult extends Activity {
             ////////////////////////////////////////////////////////////////////////
             // Información del DG2 (foto), si la tenemos
             ImageView ivFoto = (ImageView) findViewById(R.id.CITIZEN_data_tab_00);
-            if(m_dataDG2!=null){
+            if (m_dataDG2 != null) {
                 try {
                     // Parseo de la foto en formato JPEG-2000
-                    byte [] imagen = m_dg2.getImageBytes();
-                    J2kStreamDecoder j2k = new J2kStreamDecoder();
-                    ByteArrayInputStream bis = new ByteArrayInputStream(imagen);
+                    byte[]               imagen = m_dg2.getImageBytes();
+                    J2kStreamDecoder     j2k    = new J2kStreamDecoder();
+                    ByteArrayInputStream bis    = new ByteArrayInputStream(imagen);
                     loadedImage = j2k.decode(bis);
-                }catch(Exception e)
-                {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
 
             // Mostramos la foto si hemos podido decodificarla
-            if(loadedImage!=null)
+            if (loadedImage != null) {
                 ivFoto.setImageBitmap(loadedImage);
-            else
+            } else {
                 ivFoto.setImageResource(R.drawable.noface);
-
-            ////////////////////////////////////////////////////////////////////////
-            // Información del DG7, si la tenemos
-
-
-            Date hoy = new Date();
-
-            Calendar nac = Calendar.getInstance();
-            nac.setTime(fecNacDate);
-
-
-            Calendar today = Calendar.getInstance();
-            today.setTime(hoy);
-
-            //nac.set(Calendar.MONTH, today.get(Calendar.YEAR));
-
-            nac.set(Calendar.YEAR, today.get(Calendar.YEAR));
-
-           if(nac.before(today)) {
-                nac.set(Calendar.YEAR, nac.get(Calendar.YEAR) + 1);
             }
 
 
-            long diffTime = (nac.getTimeInMillis() - today.getTimeInMillis());
+            //Calculate days until next birthday
+            Calendar nac = Calendar.getInstance();
+            nac.setTime(fecNacDate);
 
-            textoAMostrar = "Hola amigo " + nombre + apellidos + " veo que estás usando la app de la asignatura de Criptografía.\n" +
-                    "¿El día "+fecNac+" es tu cumpleaños? Solo te quedan " + (int)TimeUnit.MILLISECONDS.toDays(Math.abs(diffTime)) + "días" + ". Ve a celebrarlo a "+lugNac+"\n" +
-                    "No olvides pedir un aprobado en Criptografía al soplar las velas";
+            Calendar today = Calendar.getInstance();
+            today.setTime(new Date());
 
-        //textoAMostrar = "HOLA: " + nac.getTime() + " Mes: " + nac.get(Calendar.MONTH) + " Dia: "+nac.get(Calendar.DAY_OF_MONTH) + " Año: " +nac.get(Calendar.YEAR);
+            nac.set(Calendar.YEAR, today.get(Calendar.YEAR));
+
+            // if birthday already have been this year -> calculate next
+            if (nac.before(today)) {
+                nac.set(Calendar.YEAR, nac.get(Calendar.YEAR) + 1);
+            }
+
+            //calculate days until net birthday
+            long diffDays = (nac.getTimeInMillis() - today.getTimeInMillis());
+
+            textoAMostrar = "Hola amigo " + nombre + apellidos + " veo que estás usando la app de la asignatura de Criptografía.\n"
+                            + "¿El día " + fecNac + " es tu cumpleaños? Solo te quedan " + (int) TimeUnit.MILLISECONDS.toDays(diffDays)
+                            + " días" + ". Ve a celebrarlo a " + lugNac + "\n"
+                            + "No olvides pedir un aprobado en Criptografía al soplar las velas";
+
             textoMostrar = (TextView) findViewById(R.id.textomostrar);
             textoMostrar.setText(textoAMostrar);
         }
         ///////////////////////////////////////////////////////////////////////////////////
         // Botón de vuelta al Activity anterior
-        Button btnNFCBack = (Button)findViewById(R.id.butVolver);
+        Button btnNFCBack = (Button) findViewById(R.id.butVolver);
         btnNFCBack.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
