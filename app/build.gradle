@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.google.guava:guava:18.0'
+    compile 'com.google.guava:guava:24.1.1-jre'
     compile project(':dniedroid')
     compile files('libs/bcpkix-jdk15on-1.49.jar')
     compile files('libs/bcprov-jdk15on-1.49.jar')
